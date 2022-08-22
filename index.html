@@ -1,0 +1,82 @@
+ <!-- Created entirely By Sebastian105 -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sebastian - 105</title>
+  <link rel="icon" type="image/png" href="/imgs/Icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="script.js"></script> 
+<script>
+  alert("Some games dont work. I am too lazy to fix it.")
+</script>
+<link rel="stylesheet" href="105.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="https://sebastian105.repl.co/105/changelog" target="_blank">Changelog</a>
+  <a href="mailto:28schapfel4@lexingtonma.org" target="_blank">Contact</a>  
+  <a href="105/acknowledgements/" target="_blank">Acknowledgements</a>
+  <a href="/game/" target="_blank">Offical Games Site</a>
+  <a href="105/chatroom/" target="_blank">Offical Chatroom</a>
+  <a href="https://forms.gle/jPeWA9dVcBoQrgcn9" target="_blank">Help</a>
+  <button class="dropdown-btn">Links
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="https://open.spotify.com/playlist/1oNedrbhBXt3UhSKn8tr23"target="_bank">My spotify playlist</a>
+    <a href="https://replit.com/@Sebastian105" target="_blank">My Replit account</a> 
+  </div>
+  <a onclick="myFunction105()"><h4>Light/Dark</h4></a>
+  <!-- when this (^) is clicked it will activate dark/light mode -->
+  </div>
+  <script>
+function myFunction105() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+<div class="main">
+  <h2>Home Page</h2><p><h3>By: Sebastian</h3></p>
+  <P>Hello! Welcome to my Home page.</P>
+  <p style="font-size:40px; text-align:center;">About:</p>
+  <p>Hi my name is Sebastian105 but my name is actually Sebastian <sup><b style="font-size:12px;">[Citation Needed]</b></sup> and I have created this website for my personal uses. Currently I live in the greater boston area.  I learned coding to make a better website than the current big thing, <a href="https://choobs.repl.co">Choobs</a>.  Personally, I think I have succeeded. (What do you think write it in the feedback form.) Although I am not so sure how I am going to get people to come here instead.  My replit account ---> <a href="https://replit.com/@Sebastian105"> Here</a></p>
+  <p style="font-size:40px; text-align:center;">General</p>
+  <p>In case this site is blocked here is a link to a clone of it --> <a href="https://2.sebastian105.repl.co">here</a>.
+<h1 syle="font-size:50px; text-align:center;">-Sebastian105</h1>
+</div>
+
+<script>
+  function myFunction123() {
+  var x = event.key;
+
+  // If the pressed keyboard button is "a" or "A" (using caps lock or shift), alert some text.
+  if (x == "~" || x == "~") { 
+  window.location.href = "https://asdfadfasdfeuewrqeurqieurkaljdkladjfalkjdfoiejasdkfjlaadfa.sebastian105.repl.co/";
+
+  }
+}
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+if (document.location.href.indexOf('https://sebastian105.repl.co') === -1){ 
+      window.location.replace("https://sebastian105.repl.co");
+    }
+</script>
+
+</body>
+</html> 
