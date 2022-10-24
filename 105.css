@@ -1,9 +1,15 @@
 p {
+  font-family: times new roman;
   margin-top: 0px;
   margin-bottom: 35px;
   margin-right: 50px;
   margin-left: 50px;
 }
+#backup {
+ font-family: times new roman;
+  background-color: #27262b; 
+}
+
 
 h2 {
   margin-top: 25px;
@@ -21,6 +27,7 @@ h3 {
 /* Body/html */
 body {
   font-family: Times New Roman', serif;
+  background: ;
 }
   
 /* Fixed sidenav, full height */
@@ -33,7 +40,7 @@ body {
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  padding-top: 25px;
+  padding-top: 50px;
 }
 
 /* Style the sidenav links and the dropdown button */
@@ -41,19 +48,33 @@ body {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
-  color: #818181;
+  color: #ffffff;
   display: block;
   border: none;
   background: none;
   width: 100%;
   text-align: left;
-  cursor: pointer;
+  cursor: cell;
+  outline: none;padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: cell;
   outline: none;
+  font-family: Times New Roman; 
+  border-radius: 25px;
 }
 
 /* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
   color: #f1f1f1;
+  background-color: #30c032;
+  border-radius: 25px;
 }
 
 /* Main content */
@@ -65,7 +86,7 @@ body {
 
 /* Add an active class to the active dropdown button */
 .active {
-  background-color: green;
+  background-color: #30c032;
   color: white;
 }
 
@@ -74,13 +95,14 @@ body {
   display: none;
   background-color: #262626;
   padding-left: 8px;
+  border-radius: 25px;
 }
 
 /* Optional: Style the caret down icon */
 .fa-caret-down {
   float: right;
   padding-right: 8px;
-  font-family: Times New Roman', serif;
+  font-family: Times New Roman', times new roman;
 }
 
 /* Some media queries for responsiveness */
@@ -92,3 +114,68 @@ body {
   background-color: #27262b;
   color: white;
 }
+.picture {
+  border: 2px;
+  float: right;
+  padding: 5px;
+}
+#announcementBar {
+	padding: 0 1rem 0 1.5rem;
+	position: relative;
+	margin:0;
+	-webkit-align-items: center;
+	align-items: center;
+	background-color: #4f4f4f;
+	border-bottom: 0.0625rem solid #dadce0;
+	display: flex;
+  flex-wrap: wrap;
+	height: 53px;
+}
+.announcement {
+	padding: 1rem 0.3125rem 1rem 0;
+	margin:0;
+	letter-spacing: .01428571em;
+	font-family: Roboto,Arial,sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.25rem;
+	color: #3c4043;
+	margin-right: calc(88px - 1rem);
+}
+#dismiss {
+	margin: 0 0 0 auto;
+  float: right;
+  right: 0;
+	position: absolute;
+}
+.dismissed {
+	animation-name: dismissed;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+}
+.btnText {
+  font-family: "Google Sans",Roboto,Arial,sans-
+}
+#altLinkContainer {
+	margin: 12px 30px 30px;
+	color: #545454;
+}
+
+.altModalContent {
+	position: relative;
+	background-color: #fefefe;
+	border: 1px solid #888;
+	width: 20vw;
+	min-width: 16rem;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	border-radius: 10px;
+  user-select: none;
+	-webkit-user-select: none;
+	margin: auto;
+	padding: 2rem;
+	bottom: -10vh;
+
+	-webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatebottom;
+  animation-duration: 0.4s;

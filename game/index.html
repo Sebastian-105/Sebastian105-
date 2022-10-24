@@ -1,12 +1,14 @@
 <html>  
 
-<!--- Edited by Sebstian.  Made from scratch by Choobs. --->  
+<!--- Edited by Sebstian105.  Made from scratch by Choobs. --->  
 <head> 
  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.6.1/d3.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="/script.js/"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script>
     var Name = Sebastian;
     //Console timestamp script
@@ -80,35 +82,27 @@ body {
 <body>
   <nav>
     <div class="topnav">
-  <a href="https://sebastian105.repl.co" target="_blank">Home</a>
+  <a onclick="myFunction2468()">Home</a>
   <a href="https://sebastian105.repl.co/105/changelog/" target="_blank">Changelog</a>
       <a href="mailto:28schapfel4@lexingtonma.org" target="_blank">Contact</a>
-  <a href="https://sebastian105.repl.coc/acknowledgements/">Acknowledgements</a>
-  <a href="https://forms.gle/GPKzaUTYu7PpQAs66" target="_blank">Addgame</a>
-  <a href="https://forms.gle/jPeWA9dVcBoQrgcn9" target="_blank">Help</a>
+  <a href="/105/acknowledgements/"target="_blank" >Acknowledgements</a>
+  <a href="https://Sebastian105.repl.co/105/addgame" target="_blank">Addgame</a>
+  <a href="https://forms.gle/1yL9d9zFCkFsvXoQA" target="_blank">Help form</a>
   <a onclick="myFunction105()">Light/Dark</a>
     </div> 
 
-<script>
+<script type="text/javascript">
+
 function myFunction105() {
    var element = document.body;
    element.classList.toggle("dark-mode");
 }
-</script>
-<body onkeypress="myFunction()">
 
-<script>
-function myFunction() {
-  var x = event.key;
-
-  // If the pressed keyboard button is "a" or "A" (using caps lock or shift), alert some text.
-  if (x == "~" || x == "~") { 
-  window.location.href = "https://asdfadfasdfeuewrqeurqieurkaljdkladjfalkjdfoiejasdkfjlaadfa.sebastian105.repl.co/";
-
-  }
+function myFunction2468() {
+  var myWindow = window.open("https://Sebastian105.repl.co/", "_blank", "width=400,height=400");
 }
 </script>
-    <div class="navRight">
+<div class="navRight">
       <img class="pfp" src="img/profile.png">
       <div class="apps">
         <svg class="gb_Ne" focusable="false" viewBox="0 0 24 24">
@@ -139,6 +133,11 @@ function myFunction() {
         </script>
       </div>
     </div>
+    <script>
+function blocked2() {
+  var myWindow = window.open("/105/blocked", "_blank", "width=300,height=330,resizable=yes,left=500,top=200,toolbar=yes");
+}
+    </script>
     <script> //Shadow on scroll script
       let lastKnownScrollPosition = 0;
       let ticking = false;
@@ -159,9 +158,9 @@ function myFunction() {
     </script>
   </nav>
 	<div id="announcementBar">
-		<p class="announcement"></p>
+		<p class="announcement">Blocked? <a onclick="blocked2()">Here are some alternatives</a></p>
 		<script>
-      var visible = new Boolean(false); //Announcement Toggle
+      var visible = new Boolean(true); //Announcement Toggle
     </script>
 		<div id="dismiss">
 			<div class="btn d">
@@ -209,7 +208,7 @@ function myFunction() {
       <script>
         chatroom.addEventListener('click', function (event) {
           console.log("Chatroom Opened");
-          window.open("105/chatroom/", "_blank");
+          window.open("/105/chatroom/", "_blank");
         });
       </script>
     </div>
@@ -329,9 +328,9 @@ function myFunction() {
     <div class="classroom">
       <div class="a">
         <div class="banner" style='background-image: url("https://www.gstatic.com/classroom/themes/Math.jpg");'>
-          <a class="classText" href="https://Proxy.sebastian105.repl.co/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on Proxy")'>
+          <a class="classText" href="/game/c/proxy/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on Proxy")'>
             <div class="main">Proxy</div>
-            <div class="sub">Ublocks most sites</div>
+            <div class="sub">Ublocks most sites</div> 
           </a>
         </div>
         <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
@@ -393,13 +392,13 @@ function myFunction() {
         <div class="banner" style='background-image: url("https://www.gstatic.com/classroom/themes/img_code.jpg");'>
           <a class="classText" href="c/zombsroyale-multiplayer/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on Shell Shockers")'>
             <div class="main">Zombs Royale</div>
-            <div class="sub">Git gud.</div>
+            <div class="sub">Strangley Addicting.</div>
           </a>
         </div>
         <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
           <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
         </svg>
-        <img src="img/Shell.jpeg" class="gameIcon" alt="Flappy Bird"/>
+        <img src="img/ZombsRoyale.png" class="gameIcon" alt="Zombs"/>
       </div>
       <div class="b">
         <div class="icon">
@@ -515,7 +514,7 @@ function myFunction() {
     <div class="classroom">
       <div class="a">
         <div class="banner" style='background-image: url("https://www.gstatic.com/classroom/themes/img_reachout.jpg");'>
-          <a class="classText" href="c/RetroBowl/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on Retro Bowl")'>
+          <a class="classText" href="/game/c/retrobowl" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on Retro Bowl")'>
             <div class="main">Retro Bowl</div>
             <div class="sub">pixelated football</div>
           </a>
@@ -810,37 +809,7 @@ function myFunction() {
         </div>
       </div>
     </div>
-    <!-- C4 - Block The Pig -->
-    <div class="classroom">
-      <div class="a">
-        <div class="banner" style='background-image: url("https://www.gstatic.com/classroom/themes/img_bbq.jpg");'>
-          <a class="classText" href="c/BlockThePig/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on Block The Pig")'>
-            <div class="main">Block The Pig</div>
-            <div class="sub">oink oink</div>
-          </a>
-        </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-        <img src="img/blockthepig.png" class="gameIcon" alt="Block The Pig"/>
-      </div>
-      <div class="b">
-        <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
-        </div>
-        <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
-        </div>
-      </div>
-    </div>
+    
     <!-- D1 - Duck Life 4 -->
     <div class="classroom">
       <div class="a">
@@ -1089,6 +1058,38 @@ function myFunction() {
         </div>
       </div>
     </div>
+    <!-- A2 - Flappy Bird -->
+    <div class="classroom">
+      <div class="a">
+        <div class="banner" style='background-image: url("https://www.gstatic.com/classroom/themes/img_code.jpg");'>
+          <a class="classText" href="c/RR/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on R.R.")'>
+            <div class="main">Relic Runway</div>
+            <div class="sub">Up, Down, Left, Right.</div>
+
+          </a>
+        </div>
+        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
+          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+        </svg>
+        <img src="/imgs/Icon.png" class="gameIcon" alt="Flappy Bird"/>
+      </div>
+      <div class="b">
+        <div class="icon">
+          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
+            </path>
+            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
+            </path>
+          </svg>
+        </div>
+        <div class="icon">
+          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
+          </path>
+          </svg>
+        </div>
+      </div>
+    </div>
     <!-- F1 - Slinguin - PROXY -->
     <div class="classroom">
       <div class="a">
@@ -1120,37 +1121,7 @@ function myFunction() {
         </div>
       </div>
     </div>
-		<!-- F2 - Stickman Boost 2 - PROXY -->
-    <div class="classroom">
-      <div class="a">
-        <div class="banner" style='background-image: url("https://www.gstatic.com/classroom/themes/img_theatreopera.jpg");'>
-          <a class="classText" href="https://womginx.binaryperson.repl.co/main/https://choobs.repl.coc/StickmanBoost2/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on Stickman Boost 2")'>
-            <div class="main">Stickman Boost 2</div>
-            <div class="sub">another stickman game</div>
-          </a>
-        </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-        <img src="img/stickmanboost2.png" class="gameIcon" alt="Appel"/>
-      </div>
-      <div class="b">
-        <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
-        </div>
-        <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
-        </div>
-      </div>
-    </div>
+		
 		<!-- F3 - Appel -->
     <div class="classroom">
       <div class="a">
@@ -1248,7 +1219,7 @@ function myFunction() {
     <div class="classroom">
       <div class="a">
         <div class="banner" style='background-image: url("https://www.gstatic.com/classroom/themes/img_birthday.jpg");'>
-          <a class="classText" href="https://womginx.binaryperson.repl.co/main/https:/choobs.repl.coc/DoodleJump/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on Doodle Jump")'>
+          <a class="classText" href="/game/c/DoodleJump/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on Doodle Jump")'>
             <div class="main">Doodle Jump</div>
             <div class="sub">one of the mobile games</div>
           </a>
@@ -1279,7 +1250,7 @@ function myFunction() {
     <div class="classroom">
       <div class="a">
         <div class="banner" style='background-image: url("https://www.gstatic.com/classroom/themes/img_videogaming.jpg");'>
-          <a class="classText" href="c/Run3/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on Run 3")'>
+          <a class="classText" href="c/run3/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on Run 3")'>
             <div class="main">Run 3</div>
             <div class="sub">bouncing blob</div>
           </a>
@@ -1434,7 +1405,7 @@ function myFunction() {
     <div class="classroom">
       <div class="a">
         <div class="banner" style='background-image: url("https://www.gstatic.com/classroom/themes/img_gym.jpg");'>
-          <a class="classText" href="c/BasketballStars/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on Basketball Stars")'>
+          <a class="classText" href="/game/c/BasketballStar" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on Basketball Stars")'>
             <div class="main">Basketball Stars</div>
             <div class="sub">🏀 🗑️ ✨</div>
           </a>
@@ -1461,19 +1432,49 @@ function myFunction() {
         </div>
       </div>
     </div>
-		<!-- I1 - Sugar, Sugar 3 -->
     <div class="classroom">
       <div class="a">
         <div class="banner" style='background-image: url("https://www.gstatic.com/classroom/themes/img_handcraft.jpg");'>
-          <a class="classText" href="c/SugarSugar3/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on Sugar, Sugar 3")'>
-            <div class="main">Sugar, Sugar 3</div>
-            <div class="sub">also a mobile game</div>
+          <a class="classText" href="c/t-rex/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on Sugar, Sugar 3")'>
+            <div class="main">T rex game</div>
+            <div class="sub">Jump! Duck!</div>
           </a>
         </div>
         <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
           <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
         </svg>
-        <img src="img/sugarsugar3.png" class="gameIcon" alt="Sugar Sugar 3"/>
+        <img src="img/trex.png" class="gameIcon" alt="Moto"/>
+      </div>
+      <div class="b">
+        <div class="icon">
+          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
+            </path>
+            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
+            </path>
+          </svg>
+        </div>
+        <div class="icon">
+          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
+          </path>
+          </svg>
+        </div>
+      </div>
+    </div>
+		<!-- I1 - Sugar, Sugar 3 -->
+    <div class="classroom">
+      <div class="a">
+        <div class="banner" style='background-image: url("https://www.gstatic.com/classroom/themes/img_handcraft.jpg");'>
+          <a class="classText" href="c/moto/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on Sugar, Sugar 3")'>
+            <div class="main">Moto x3m</div>
+            <div class="sub">Voom Voom.</div>
+          </a>
+        </div>
+        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
+          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+        </svg>
+        <img src="img/moto.png" class="gameIcon" alt="Moto"/>
       </div>
       <div class="b">
         <div class="icon">
@@ -1493,10 +1494,11 @@ function myFunction() {
       </div>
     </div>
 	</div>
+<!-- Dont put another game/link under here --> 
 	<script>
 		const element = document.getElementById("announcementBar");
 		if (visible == false) {
-			element.style.visibility = "hidden";
+			element.style.visibility = "visible";
 			const visible = element.style.visibility;
 		}
 		else {
@@ -1507,7 +1509,6 @@ function myFunction() {
 			document.getElementById("content").style.top = '65';
 		};
 	</script>
-  </div>
 </body>
 
 </html>

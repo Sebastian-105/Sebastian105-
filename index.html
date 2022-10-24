@@ -1,64 +1,183 @@
- <!-- Created entirely By Sebastian105 -->
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Sebastian - 105</title>
-  <link rel="icon" type="image/png" href="/imgs/Icon.png">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="script.js"></script> 
-<script>
-  alert("Some games dont work. I am too lazy to fix it.")
-</script>
-<link rel="stylesheet" href="105.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
+  <head>
+    
+      <meta charset="utf-8">
+      <meta http-equiv="refresh" content="600">
+      <meta name="viewport" content="width=device-width">
+      <title>[105] Sebstian</title>
+          <link href="105.css" rel="stylesheet" type="text/css" />
 
-<div class="sidenav">
-  <a href="https://sebastian105.repl.co/105/changelog" target="_blank">Changelog</a>
-  <a href="mailto:28schapfel4@lexingtonma.org" target="_blank">Contact</a>  
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+      <link rel="icon" href="/105.png">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script type="text/javascript" src="index.js"></script>
+     <style>
+  h3 {
+    font-family: times new roman;
+
+  }
+  p {
+    font-family: times new roman;
+  }
+  .sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 50px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: cell;
+  outline: none;padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: cell;
+  outline: none;
+  font-family: Times New Roman; 
+  border-radius: 50px;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+  background-color: #30c032;
+  border-radius: 50px;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: #30c032;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+  border-radius: 25px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+  font-family: Times New Roman', times new roman;
+}
+
+    </style>
+    
+  </head>
+    <body>
+	  
+        <div class="container">
+	  
+		<!--────────────────Header───────────────-->
+			
+			<div class="hamburger">
+				<div class="line1"></div>
+            <div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<!--─────────────────Home────────────────-->
+	  <div id="home">
+		 <div class="filter"></div>
+		 <section class="intro">
+		  <h3>Sebastian105<hr></h3>
+       <p>Not much of a pseudonyam wouldn't you say?</p>
+       <p>If you ever find this site useful for future projects. . . CITE ME!</p>
+       <p>I would appreciate if you told me in the feedback from about my site.</p>
+		  <!--────social media links─────-->
+			 
+		  <div class="social-media">
+		    </div>
+			 
+		 </section> 
+	  </div>  
+		
+	  <!--───────────────Projects───────────────-->
+	  <div id="projects"> 
+		 <h3>My Projects.<hr></h3>
+		  <p>Here are some of my projects, you may like.</p>
+		  <div class="work-box">
+		  <div class="work">
+        <!-- sidenav -->
+        <div class="sidenav">
+  <a onclick="myFunctionchangelog()">Changelog</a>
+  <a onclick="myFunction12345()">Contact</a>  
   <a href="105/acknowledgements/" target="_blank">Acknowledgements</a>
-  <a href="/game/" target="_blank">Offical Games Site</a>
-  <a href="105/chatroom/" target="_blank">Offical Chatroom</a>
-  <a href="https://forms.gle/jPeWA9dVcBoQrgcn9" target="_blank">Help</a>
-  <button class="dropdown-btn">Links
+  <a onclick="myFunctiongame()">Offical Games Site</a>
+  <a onclick="myFunctionChatroom()">Offical Chatroom</a>
+      <a onclick="blocked()">Blocked?</a>
+  <button class="dropdown-btn">Forms
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
-    <a href="https://open.spotify.com/playlist/1oNedrbhBXt3UhSKn8tr23"target="_bank">My spotify playlist</a>
-    <a href="https://replit.com/@Sebastian105" target="_blank">My Replit account</a> 
-  </div>
-  <a onclick="myFunction105()"><h4>Light/Dark</h4></a>
-  <!-- when this (^) is clicked it will activate dark/light mode -->
-  </div>
-  <script>
-function myFunction105() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script>
-
-<div class="main">
-  <h2>Home Page</h2><p><h3>By: Sebastian</h3></p>
-  <P>Hello! Welcome to my Home page.</P>
-  <p style="font-size:40px; text-align:center;">About:</p>
-  <p>Hi my name is Sebastian105 but my name is actually Sebastian <sup><b style="font-size:12px;">[Citation Needed]</b></sup> and I have created this website for my personal uses. Currently I live in the greater boston area.  I learned coding to make a better website than the current big thing, <a href="https://choobs.repl.co">Choobs</a>.  Personally, I think I have succeeded. (What do you think write it in the feedback form.) Although I am not so sure how I am going to get people to come here instead.  My replit account ---> <a href="https://replit.com/@Sebastian105"> Here</a></p>
-  <p style="font-size:40px; text-align:center;">General</p>
-  <p>In case this site is blocked here is a link to a clone of it --> <a href="https://2.sebastian105.repl.co">here</a>.
-<h1 syle="font-size:50px; text-align:center;">-Sebastian105</h1>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSej0zRj13q_XUyrDk0qvdjL2Dn2JT5dwFW0Prz99iD1gEeNZQ/viewform?usp=sf_link"target="_bank">help form</a>
+    <a onclick="addgame()">Addgame form</a> 
+    <a onclick="suggestions()">Suggestions</a>
+    <a onclick="feedback()">Feedback</a>
 </div>
+  <button class="dropdown-btn">Links<i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a onclick="myFunctionspotify()">My Spotify playlist</a>
+    <a href="https://replit.com/@Sebastian105" target="_blank">My Replit account</a> 
+    <a href="5e936585-1107-44ca-8e1b-c642c8b5a33c.id.repl.co">Backup link</a>
+    <a href="https://replit.com/" target="_blank">My coding platform</a>
+     <a href="/105/time/" target="_blank">Time</a>
+    <a href="/105/LICENSE" target="_blank">LICENSE</a>
+   <a href="/105.png" target="_blank">Icon</a>
+    <a href="/105/coords/" target="_blank">Coordinates</a>
+  </div>
 
-<script>
-  function myFunction123() {
-  var x = event.key;
 
-  // If the pressed keyboard button is "a" or "A" (using caps lock or shift), alert some text.
-  if (x == "~" || x == "~") { 
-  window.location.href = "https://asdfadfasdfeuewrqeurqieurkaljdkladjfalkjdfoiejasdkfjlaadfa.sebastian105.repl.co/";
+  <button class="dropdown-btn">School
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="/school/schedule/"target="_bank">7th grade schedule</a>
+    <a href="/school/homework"target="_blank">Explorer Homework</a>
+    <a href="https://classroom.google.com/a/not-turned-in/all"target="_blank">To do (classroom)</a>
+  </div>
+  <a onclick="bio()">My Bio (short)</a>
 
-  }
-}
-/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  </div>
+        <script>
+         /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
@@ -73,10 +192,138 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
-if (document.location.href.indexOf('https://sebastian105.repl.co') === -1){ 
-      window.location.replace("https://sebastian105.repl.co");
+</script>
+  <script type="text/javascript">
+
+function blocked() {
+  var myWindow = window.open("/105/blocked/", "_blank", "width=500,height=400,resizable=yes,left=500,top=200,toolbar=yes");
+}
+
+function myFunctionterms() {
+  var myWindow = window.open("/105/terms", "_blank", "width=1300,height=680");
+
+}
+
+function addgame() {
+   var myWindow = window.open("https://forms.gle/TXz4Mk4ZQEyjSn43A", "_blank", "width=1300,height=680");
+}
+
+
+function feedback() {
+   var myWindow = window.open("https://forms.gle/xmRta2vvGCLsrKUC8", "_blank", "width=1300,height=680");
+}
+
+  function suggestions() {
+   var myWindow = window.open("https://forms.gle/X82sK1epn5Y1Rqj66", "_blank", "width=1300,height=680");
+}
+
+function myFunctionDarkMode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+
+function myFunctiongame() {
+  var myWindow = window.open("/game/", "_blank", "width=1300,height=680");
+}
+function myFunction12345() {
+   var myWindow = window.open("", "MsgWindow", "width=500,height=500");
+  myWindow.document.write("Email:<p>28stu216@lexingtonma.org</p><p><strong>Note:</strong> you can only email me if you have a lexington account</p><p>I will get a email account shortly</p>");
+}
+function bio() {
+   var myWindow = window.open("", "MsgWindow", "width=500,height=500");
+  myWindow.document.write("Sebastian is a kid who learned to code.  He made this site to replicate choobs.repl.co. (unfortunately that sites been blocked).");
+}
+
+function myFunctionchangelog() {
+  var myWindow = window.open("/105/changelog/", "_blank", "width=1300,height=680");
+}
+function myFunctionspotify() {
+  var myWindow = window.open("/105/spotify", "_blank", "width=1300,height=680");
+}
+
+function myFunctionChatroom() {
+  var myWindow = window.open("/105/chatroom/", "_blank", "width=1300,height=680");
+}
+
+  
+</script>
+		<!--───────────────card───────────────-->
+			<div class="card">
+			    <img class="work-img" src="105.png">
+			    <a href="/game/" target="_blank"> <!--Link to project-->
+				<div class="work-content">Games site</div></a>
+            </div>
+			<div class="card">
+			    <img class="work-img" src="105.png">
+				<a href="/105/chatroom/" target="_blank"> <!--Link to project-->
+				<div class="work-content">Chatroom</div></a>
+            </div>
+        <div class="card">
+			    <img class="work-img" src="105.png">
+				<a href="https://replit.com/@Sebastian105/Sebastian105?v=1" target="_blank"> <!--Link to project-->
+				<div class="work-content">Sebastian105 homepage</div></a>
+            </div>
+            <div class="card">
+			    <img class="work-img" src="105.png">
+				<a href="https://replit.com/@Sebastian105/Sebastian105?v=1" target="_self"> <!--Link to project-->
+				<div class="work-content">Cover Page</div></a>
+            </div>
+            <div class="card">
+			    <img class="work-img" src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+				<a href="" target="_blank"> <!--Link to project-->
+				<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div></a>
+            </div> 
+			<div class="card">
+			    <img class="work-img" src="https://images.unsplash.com/photo-1535556116002-6281ff3e9f36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=781&q=80">
+				<a href="" target="_blank"> <!--Link to project-->
+				<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div></a>
+            </div>
+			<div class="card">
+			    <img class="work-img" src="https://images.unsplash.com/photo-1483546416237-76fd26bbcdd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+				<a href="" target="_blank"> <!--Link to project-->
+				<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div></a>
+            </div> 	  
+		  </div>
+		  </div>
+	  </div>
+		 
+		<!--──────────────Contact────────────────-->
+	  <div id="contact">
+		  <!--────social media links─────-->
+		   <h3>Contact.<hr></h3>
+		   <p>I dont have a lot of social media</p>
+       <a href="https://github.com/mastergamer105/" target="_blank"><i class='fab fa-github'></i></a>
+
+		    <div class="social-media">
+		    </div>
+		  </div>
+
+	</main>
+	  <footer class="copyright">© 2022
+		  <a onclick="Copyright()"> Sebastian105</a>
+     </footer>
+	  
+  </div>
+
+  <script>
+function Copyright() {
+    var myWindow = window.open("https://replit.com/@Sebastian105", "_blank", "width=1300,height=680");
+}
+  </script>
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+<script>
+function myFunction123() {
+  var x = event.key;
+
+}
+}
+window.location.replace("https://Sebastian105.repl.co");
     }
 </script>
-
-</body>
-</html> 
+      
+  </body>
+</html>
