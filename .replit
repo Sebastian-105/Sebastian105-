@@ -61,7 +61,7 @@ pattern = "**/{*.js,*.jsx,*.ts,*.tsx,*.mjs,*.cjs}"
 requiredFiles = [".replit", "replit.nix", ".config"]
 
 [auth]
-pageEnabled = true
+pageEnabled = false
 buttonEnabled = false
 
 # TODO autocomplete relies on snippet support, which we don't advertise to LSP servers.
