@@ -1,5 +1,5 @@
-entrypoint=["index.html"]
-hidden=[".config"]
+entrypoint=["/index.html/"]
+hidden=[" .config, .git, Notes"]
 
 # hosting is currently hardcoded for this language
 # [hosting]
